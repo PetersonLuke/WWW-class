@@ -1,0 +1,10 @@
+#homePage {
+    font-family: sans-serif; 
+    font-size: 1.em;
+    max-width:600px;
+    margin:auto;    
+}
+
+#cantsee {
+    font-size: 0.1em
+}

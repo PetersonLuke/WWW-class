@@ -1,0 +1,84 @@
+<!DOCTYPE>
+<html>
+<!---->
+    <head>
+        <title>Area Calculator</title>
+    </head>
+    
+    <body>
+        
+        <h1>Area Calculator</h1>
+        
+        <p>Enter a length and width, then press submit</p>
+        
+        <form>
+            
+            <!--The width of the thing they will look at-->
+            Width: &nbsp;<input type="text" name="width" id="width" value="10" style="width:50px"> 
+            <br>
+            <!--The length of the thing they will look at-->
+            Length: <input type="text" name="length" id="length" value="10" style="width:50px">
+            <br>
+            <!--Button to calculate the stuff-->
+            <input type="button" value="Calc Area" name="calc" onclick="CalcArea()">
+            <br>
+            
+        </form>
+        
+        <p>Area: <span id="area"></span></p>
+        
+        <!--Space to draw out the area calculated-->
+        <canvas width="150px" height="150px" id="aCanvas" style="border-style: solid"></canvas>
+        
+    </body>
+    
+    <script>
+        
+        function CalcArea()
+        {
+            var width = document.getElementById("width").value;
+            var length = document.getElementById("length").value;
+            var area = width*length;
+            
+            document.getElementById("area").innerHTML = area;
+            
+            drawRectangle(width, length);
+        }
+        
+        function drawRectangle(w, l) 
+        {
+            var max = 0;
+            
+            //makes it so the string is change into compaering numbers
+            Number(w) >= Number(l) ? max=w : max=l;
+
+            var factor = 120 / max;
+            
+            //y dimension
+            w=w*factor;
+            
+            //x dimension
+            l=l*factor;
+            
+            //where to start drawing
+            var startX = 75-(l/2);
+            var startY = 75-(w/2);
+            
+            var areaCanvas = document.getElementById("aCanvas");
+            var ctx = areaCanvas.getContext("2d");
+            
+            ctx.clearRect(0,0,150,150);
+            
+            ctx.strokeRect(startX, startY, l, w);
+            
+            //add text to the side of the box
+            w=w/factor; //needed to get the number back to start
+            l=l/factor; //needed to get the number back to starting value
+            ctx.fillText(w,0,75);   //x value
+            ctx.fillText(l,68,startY-5) //y value
+            ctx.fillText(l*w, 68, 75);  
+        }
+        
+    </script>
+    
+</html>

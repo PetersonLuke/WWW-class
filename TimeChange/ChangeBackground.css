@@ -1,0 +1,63 @@
+.morningFoodBackground {
+    background-position: center;
+    background-position: top;
+    background-size: 1000px;
+    height: 900px;
+    background-image: url("Images/wantsToEat.jpg");
+    background-repeat: no-repeat;
+}
+
+.firstNapBackground {
+    background-position: center;
+    background-position: top;
+    background-size: 1000px;
+    height: 900px;
+    background-image: url("Images/naptime1.jpg");
+    background-repeat: no-repeat;
+}
+
+.lunchBackground {
+    background-position: center;
+    background-position: top;
+    background-size: 1000px;
+    height: 900px;
+    background-image: url("Images/lunchtime.JPG");
+    background-repeat: no-repeat;
+}
+
+.secondNapBackground {
+    background-position: center;
+    background-position: top;
+    background-size: 800px;
+    height: 1150px;
+    background-image: url("Images/naptime2.jpg");
+    background-repeat: no-repeat;
+}
+
+.supperBackground {
+    background-position: center;
+    background-position: top;
+    background-size: 1000px;
+    height: 1200px;
+    background-image: url("Images/supperTime2.PNG");
+    background-repeat: no-repeat;
+    
+}
+
+.crazyBackground {
+    background-position: center;
+    background-position: top;
+    background-size: 800px;
+    height: 1150px;
+    background-image: url("Images/goesCrazy.jpg");
+    background-repeat: no-repeat;
+}
+
+.lonelyBackground {
+    background-position: center;
+    background-position: top;
+    background-size: 1000px;
+    height: 1400px;
+    background-image: url("Images/lonely.jpg");
+    background-repeat: no-repeat;
+}

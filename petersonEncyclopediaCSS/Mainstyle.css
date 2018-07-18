@@ -1,0 +1,59 @@
+h1,h2,h3,h4,h5,h6 {
+    font-family: sans-serif;
+    color: white;
+    
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    width: 1024px;
+    margin: auto;
+    background-color: black;
+}
+h3 { 
+    text-decoration: none;
+}
+        
+a:link {
+    color: white;
+    text-decoration: underline;
+}
+        
+a:visited {
+    color: floralwhite;
+}
+        
+a:hover {
+    color:white;
+    text-decoration: underline;
+}
+
+body {
+    color: white;
+    margin:auto;
+    max-width:1024px;
+    background-color: gray;
+    
+}
+
+.top {
+    margin-top: 152px;
+}
+
+.large {
+    display: block;
+    margin: auto;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.clear50 {
+    opacity: 0.5;
+}
+
+.clear50:hover {
+    opacity: 1.0;
+}

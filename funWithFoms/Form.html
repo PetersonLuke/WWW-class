@@ -1,0 +1,99 @@
+<!DOCTYPE>
+<html>
+    <head>
+        
+    </head>
+    
+    <body>
+        
+        <h1>Fun with forms!</h1>
+        
+        <form>
+        
+            <input type="text" value="I can be typed in!">
+            
+            <br>
+            
+            <input type="range" min=0 max=100 value =50 onchange="sliderChange()" id="slider">
+            
+            <br>
+            
+            <input type="text" id="slText">
+            <button type="button" onclick="sliderChange()">Click</button>
+        </form>
+        
+        
+        <!--create a form with three sliders to change the color of a box-->
+        <h2>Colors</h2>
+        
+        <form name="colorSliders">
+            Red:&nbsp;&nbsp;&nbsp; <input type="range" min=0 max=255 value=0 id="red" oninput="colorChange()">
+            <br>
+            Green: <input type="range" min=0 max=255 value=0 id="green" oninput="colorChange()">
+            <br>
+            Blue: &nbsp;&nbsp;<input type="range" min=0 max=255 value=255 id="blue" oninput="colorChange()">
+            <br>
+            
+        </form>
+        
+        <p id="color">#FFFFFF</p>
+        
+        <canvas id="colorCanvas" height="1000px" width="1000px" style="border:solid">
+        </canvas>
+        
+    </body>
+    
+        <script>
+            
+            function sliderChange() 
+            {
+                document.getElementById("slText").value = document.getElementById("slider").value;
+            }
+            
+            function colorChange() {
+            
+                //variable for the three differant colors
+                var red = document.getElementById("red").value;
+                var green = document.getElementById("green").value;
+                var blue = document.getElementById("blue").value;
+                
+                //convert from decimal to hex
+                red = Number(red).toString(16);     //red color
+                green = Number(green).toString(16); //green color
+                blue = Number(blue).toString(16);   //blue color
+                
+                //add padding
+                if (red.length<2) 
+                {
+                    red = "0"+red;
+                }
+                
+                if (green.length<2) 
+                {
+                    green = "0"+green;
+                }
+                
+                if (blue.length<2) 
+                {
+                    blue = "0"+blue;
+                }
+                
+                //create the color string
+                var color = "#"+red+green+blue;
+                color = color.toUpperCase();
+                
+                //return the text to color
+                document.getElementById("color").innerHTML = color;
+                
+                //reference the canvas and change the color
+                var canvas = document.getElementById("colorCanvas");    //
+                var ctx = canvas.getContext("2d");  //creates thing to fill something
+                
+                ctx.fillStyle=color;    //gets the color
+                ctx.fillRect(100,100,500,500);    //tells where to start 0,0 being top corner with 1000,1000 the size
+                
+            }
+            
+        </script>
+    
+</html>

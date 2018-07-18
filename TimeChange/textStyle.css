@@ -1,0 +1,80 @@
+body{
+    
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 3.0em;
+}
+
+.morningFood {
+    color: #ff3300;
+    font-family: Franklin Gothic Heavy;
+    background: Black;
+    border-style: ridge;
+    border-color: #b3c4ff;
+    border-width: 10px;
+    opacity: 1.0;
+    
+}
+
+.firstNap {
+    color: blue;
+    font-family: Lucida Calligraphy;
+    background: #4dffa6;
+    border-style: none;
+    border-color: none;
+    opacity: 0.4;
+    
+}
+
+.lunch {
+    color: #ffff00;
+    background: red;
+    border-style: dashed;
+    border-color: black;
+    border-width: 5px;
+    opacity: 1.0;
+}
+
+.secondNap {
+    color: #663300;
+    background: #669900;
+    border-style: none;
+    border-color: none;
+    opacity: 0.8;
+    
+}
+
+.supper {
+    color: white;
+    background: #009900;
+    font-family: Book Antiqua;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    opacity: 0.9;
+}
+
+.crazy {
+    color: #0000ff;
+    background: #ff3399;
+    font-family: Curlz MT;
+    border-top-style: groove;
+    border-right-style: dotted;
+    border-bottom-style: dashed;
+    border-left-style: ridge;
+    border-color: #ffff00;
+    border-width: 5px;
+    opacity: 1.0;
+}
+
+.lonely {
+    color: #ffff00;
+    background: #001a66;
+    font-family: Century Gothic;
+    border-style: solid;
+    border-color: yellow;
+    opacity: 0.5;
+}
