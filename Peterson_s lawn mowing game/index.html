@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Lawn mowing game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link rel="stylesheet" href="Main.css">
+        <link rel="stylesheet" href="Columns.css">
+        
+    </head>
+    
+    <!-- change to on button push-->
+    <body onload="startGame()">
+        
+        <h1>The Lawn Mowing Game!</h1>
+        <!--<p>mow the lawn see how well you can do.</p>-->
+        
+            <form name="mowerSize">
+            
+            <!--slider with value from 1-100.  Used to change the size for mower-->
+            <p>Smaller <input type="range" min=1 max=100 value =30 onchange="sliderChange()" id="slider"> Larger</p>
+            <!--Shows the value of the slider-->
+            <!--<p>Size of lawn mower (defult 30)</p>-->
+            <input type="text" value="30" id="slText">
+            </form>
+            
+            <form name="endGame">
+            
+            <!--Need to get the endGame function to stop the game and keep it from going-->
+            <button type="button" onclick="gameScore();">End Game</button>
+            
+            <!--Button to calculate the stuff-->
+            <input type="button" value="Restart" name="startOver" onclick="restart()">
+            
+            </form>
+        
+        <!--Loads the javascript-->
+        <script src="mower.js"></script>
+        
+    </body>
+    
+</html>

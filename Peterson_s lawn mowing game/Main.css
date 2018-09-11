@@ -1,0 +1,40 @@
+body {
+    
+    text-align: center;
+    background-image: url(images/background.jpg);
+}
+
+canvas {
+    border: solid;
+    background-color: darkgreen;
+}
+
+h1 {
+    margin: auto;
+    width: 390px;
+    font-family: sans-serif;
+    background-color:lightgreen;
+    
+}
+p {
+    margin: auto;
+    width: 390;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: Black;
+    background-color:lightgreen;
+}
+
+canvas {
+    border-color: black;
+}
+
+form {
+    margin: auto;
+    width: 390;
+    background-color:lightgreen;
+}
+
+aside {
+    text-align: left;
+}
